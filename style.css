@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Roboto', 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap');
+div.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+nav.navigation .logo>img {
+    max-height: 2rem;
+}
+
+nav.navigation ul.main-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav.navigation ul.main-menu>li>a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: .8rem;
+    padding: 0 8px;
+    color: #252525;
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+    opacity: .5;
+    transition: all .2s ease-out;
+}
+
+nav.navigation ul.main-menu>li>a:hover {
+    opacity: 1;
+}
+
+nav.navigation ul.main-menu>li>a.btn-hocmienphi {
+    background-color: #4a90e2;
+    padding: 10px 20px;
+    opacity: 1;
+    margin-left: 20px;
+    color: white;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: all .3s ease-out;
+}
+
+nav.navigation ul.main-menu>li>a.btn-hocmienphi:hover,
+section.pre-content a:hover {
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    background-color: #4ab4e2;
+}
+
+section.pre-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+section.pre-content * {
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+section.pre-content p:nth-child(1) {
+    font-size: 2.3rem;
+    color: #4a90e2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+section.pre-content p:nth-child(2) {
+    font-size: 2.3rem;
+    font-weight: 100;
+    color: #252525;
+}
+
+section.pre-content a {
+    display: block;
+    font-size: .8rem;
+    padding: 15px 40px;
+    border-radius: 7px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+}
