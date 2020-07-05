@@ -216,8 +216,8 @@ section.course-wrapper {
 }
 
 section.course-wrapper .first-statement {
-    width: 66.666%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 30px auto;
 }
 
 section.course-wrapper .first-statement span {
@@ -247,7 +247,7 @@ div.info-course {
 }
 
 div.info-course>* {
-    max-width: 48%;
+    width: 48%;
     margin: 0 1%;
 }
 
@@ -429,7 +429,7 @@ section.steve-jobs {
 section.steve-jobs p {
     font-family: 'Merriweather', serif !important;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 2em;
     color: #666;
 }
 
@@ -519,13 +519,22 @@ footer span.mark {
     div.info-course {
         justify-content: center;
     }
+    div.info-course>ul {
+        width: 80%;
+    }
     section.course-wrapper {
-        padding: 0;
+        padding: 30px 0;
+    }
+    div.container {
+        width: 90%;
     }
     .sharing-wrapper .share-quote .quote-wrapper {
         padding: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    div.quote-wrapper .main-quote>p {
+        margin-left: 0;
     }
 }
