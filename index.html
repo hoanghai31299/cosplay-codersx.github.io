@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+
 </head>
 
 <body>
@@ -15,8 +16,10 @@
         <nav class="navigation">
             <div class="logo">
                 <img src="./image/logo@256.png" />
+                <i class="fa fa-bars" id="humberger-btn" aria-hidden="true"></i>
             </div>
-            <ul class="main-menu">
+
+            <ul class="main-menu" id="menu-humberger">
                 <li>
                     <a href="#">trang chủ</a>
                 </li>
@@ -220,6 +223,9 @@
         if (currentQuote == -1) currentQuote = arrQuote.length - 1;
         arrQuote[currentQuote].classList.add('current');
     });
+    $('#humberger-btn').on('click', () => {
+        $('#menu-humberger').slideToggle('fast');
+    })
 </script>
 
 </html>
